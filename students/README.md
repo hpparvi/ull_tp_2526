@@ -38,7 +38,7 @@ Now, after the second lecture, your directory tree should look like:
 | Angeles Moreno Guedes | ma |
 | Lucía Rodríguez Rodríguez | rl |
 | Daniel Sosa Rodríguez | srd |
-| Victor Alonso Rodriguez | va |
+| Victor Alonso Rodriguez | av |
 
 ---
 <p align="center">
