@@ -1,43 +1,43 @@
-PROGRAM lecture_03_ex01
-    IMPLICIT NONE
+program lecture_03_ex01
+    implicit none
 
     ! Defining the matrix
-    REAL, DIMENSION(3, 4) :: A
-    REAL, DIMENSION(3, 3) :: B
-    REAL, DIMENSION(3, 4) :: C  ! C=BxA with shape (3x4)
-    INTEGER :: i
+    real, dimension(3, 4) :: a
+    real, dimension(3, 3) :: b
+    real, dimension(3, 4) :: c  ! C = B x A with shape (3x4)
+    integer :: i
 
     ! Defining matrix values with two methods
-    ! Input data values in matrix form (by rows) using ORDER
-    A = RESHAPE((/ 3.0, 2.0, 4.0, 1.0,  &
+    ! Input data values in matrix form (by rows) using order
+    A = reshape((/ 3.0, 2.0, 4.0, 1.0,  &
                    2.0, 4.0, 2.0, 2.0,  &
                    1.0, 2.0, 3.0, 7.0 /), & 
-                   (/ 3, 4 /), ORDER=[2, 1])
+                   (/ 3, 4 /), order=[2, 1])
 
-    ! Print matrix A
-    WRITE(*, '(/,A)') "Matrix A is:"
-    DO i = 1, 3
-        PRINT '(4F5.0)', A(i, :)
-    END DO
+    ! Print matrix a
+    write(*, '(/,a)') "Matrix A is:"
+    do i = 1, 3
+        print '(4f5.0)', A(i, :)
+    end do
 
     ! Input values in matrix by columns 
-    B = RESHAPE((/ 3.0, 2.0, 3.0, &
+    B = reshape((/ 3.0, 2.0, 3.0, &
                    2.0, 1.0, 0.0, &
                    4.0, 2.0, 2.0 /), (/ 3, 3 /))
 
-    ! Print matrix B
-    WRITE(*, '(/,A)') "Matrix B is:"
-    DO i = 1, 3
-        PRINT '(3F5.0)', B(i, :)
-    END DO
+    ! Print matrix b
+    write(*, '(/,a)') "Matrix B is:"
+    do i = 1, 3
+        print '(3f5.0)', B(i, :)
+    end do
 
     ! Computing matrix product
-    C = MATMUL(B,A)
+    C = matmul(B,A)
 
     ! Print the result
-    WRITE(*, '(/,A)') "Result of matrix product C = B x A is:"
-    DO i = 1, 3
-        PRINT '(4F5.0)', C(i, :)
-    END DO
+    write(*, '(/,a)') "Result of matrix product C = B x A is:"
+    do i = 1, 3
+        print '(4f5.0)', C(i, :)
+    end do
 
-END PROGRAM lecture_03_ex01
+end program lecture_03_ex01

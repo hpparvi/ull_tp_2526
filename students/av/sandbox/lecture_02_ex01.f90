@@ -1,24 +1,27 @@
-PROGRAM lecture_02_ex01
-    IMPLICIT NONE
-    INTEGER :: i, n
+program lecture_02_ex01
+    implicit none
+
+    integer :: i, n
 
     ! Loop for validate the user input
-    DO
-        ! Requesting the user tu introduce a nautural number using the terminal
-        WRITE(*, '(/,A)', advance='no') "Introduce a natural number (>= 0): "
-        READ * , n
+    do
+        ! Requesting the user to introduce a nautural number using the terminal
+        write(*, '(/,a)', advance='no') "How many times do you want to print the message: "
+        read * , n
 
         ! Exit loop if the number is correct
-        IF (n >= 0) EXIT
+        if (n >= 0) exit
 
         ! Requesting to repeat the input number with a valid one
-        PRINT *, "Error: Number must be non-negative (>= 0). Try it again."
-    END DO
+        print *, "Error: Number must be non-negative (>= 0). Try it again."
+    end do
 
-    PRINT *
-    DO i = 1, n, 1
-        WRITE(*, '(A)') "Hello World!"
-    END DO
-END PROGRAM lecture_02_ex01
+    ! Loop to print the message n times
+    print *
+    do i = 1, n, 1
+        write(*, '(a)') "Hello World!"
+    end do
+
+end program lecture_02_ex01
 
 
