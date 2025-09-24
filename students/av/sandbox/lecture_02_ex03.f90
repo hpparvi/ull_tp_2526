@@ -11,8 +11,8 @@ PROGRAM lecture_02_ex03
         ! Exit loop if the number is correct
         IF (r >= 0.0_8) EXIT
 
-        ! Requesting to repeat the input number to a valid one
-        PRINT *, "Error: Number must be non-negative. Try again."
+        ! Requesting to repeat the input number with a valid one
+        PRINT *, "Error: Number must be non-negative. Try it again."
     END DO
 
     ! Computing factorial value using gamma function
