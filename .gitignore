@@ -3,5 +3,4 @@
 .DS_Store
 
 # Binary files from exercises inside sandbox folder
-sandbox/
-!sandbox/*.f90
+sandbox/*[!.]
