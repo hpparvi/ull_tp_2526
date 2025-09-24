@@ -39,6 +39,7 @@ Now, after the second lecture, your directory tree should look like:
 | Lucía Rodríguez Rodríguez | rl |
 | Daniel Sosa Rodríguez | srd |
 | Victor Alonso Rodriguez | va |
+| José Miguel Martín Pérez | mpj |
 
 ---
 <p align="center">
