@@ -1,4 +1,4 @@
-PROGRAM lecture_02_ex02_validado
+PROGRAM lecture_02_ex02
     IMPLICIT NONE
     INTEGER :: i, n
     INTEGER(kind=8) :: fact
@@ -29,4 +29,4 @@ PROGRAM lecture_02_ex02_validado
         PRINT '(I0, "! = ", I0)', i, fact
     END DO
 
-END PROGRAM lecture_02_ex02_validado
+END PROGRAM lecture_02_ex02
