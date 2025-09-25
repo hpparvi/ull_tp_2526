@@ -1,0 +1,10 @@
+
+# Operative System files (macOS)
+.DS_Store
+
+# Compiled files fortran
+*.o
+*.mod
+
+# Binary files from exercises inside sandbox folder
+sandbox/*[!.]
