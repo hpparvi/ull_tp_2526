@@ -1,6 +1,12 @@
 module geometry
     implicit none
 
+    ! Making private internal operators and functions # Lecture 4
+    private
+
+    ! Needed types are public # Lecture 4
+    public :: dp, vector3d, point3d
+
         !--- Parameters and types ---!
 
         ! Defining the precision of the values to 64 bits # Lecture 3
